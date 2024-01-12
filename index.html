@@ -1,129 +1,60 @@
-@font-face {
-    font-family: Pacifico Regular;
-    src: url(src/pacifico-regular.ttf);
-  }
-body {
-    text-align: center;
-    font-family: 'Pacifico Regular', cursive;
-    background: linear-gradient(#fff, #EFB0C9);
-    color: #282828;
-    font-weight: 100;
-    font-size: 1.5rem;
-}
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <script src="https://cdn.jsdelivr.net/npm/js-confetti@latest/dist/js-confetti.browser.js"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles.css">
+        <title>Happy Birthday, Hollie! 🥳</title>
+        <link rel="icon" type="image/x-icon" href="images/favicon.ico">
 
-h1 {
-    font-size: 5rem;
-    font-weight: 100;
-}
+    </head>
+    <body>
+        <canvas id="confetti"></canvas>
+        <div id="header">
+            <h1>Hollie, today is your birthday! 🎂</h1>
+            <img id="bff-img" src="images/hbd.gif">
+        </div>
+        <button id="button">PRESS TO CELEBRATE 🎉</button>
+        <div class="gift-section">
+            <h2 class="gift-title">Here's how happy I am for you today 🥳</h2>
+            <h3 class="gift-hint">(Hover over the gift)</h3>
+            <div class="gift-img" id="gift-img-happy"></div>
+        </div>
+        
+        <div class="gift-section">
+            <h2 class="gift-title">In case you forgot...</h2>
+            <div class="gift-img" id="gift-img-best"></div>
+        </div>
+        
+        <div class="gift-section">
+            <h2 class="gift-title">And when you're not around, everything turns into 👇</h2>
+            <div class="gift-img" id="gift-img-chaos"></div>
+        </div>
+        
+        <div class="gift-section">
+            <h2 class="gift-title">So this selfish is birthday gift is actually...</h2>
+            <div class="gift-img" id="gift-img-backup"></div>
+        </div>
 
-#bff-img {
-    width: auto;
-    border-radius: 10px;
-    border: 10px solid #efb0c9aa;
-    margin: 80px auto;
-}
+        <div class="gift-section">
+            <h2 class="gift-title">Jokes aside, I miss you and...</h2>
+            <div class="gift-img" id="gift-img-love"></div>
+        </div>
 
-#header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.gift-section {
-    margin-top: 50px;
-}
-
-.gift-title {
-    margin-bottom: 10px;
-}
-
-.gift-hint {
-    margin-top: 0;
-}
-
-
-.gift-img {
-    margin: 80px auto;
-    max-width: 400px;
-    height: 400px;
-    border: 6px solid white;
-    border-radius: 10px;
-    background-image: url("images/present.gif");
-    background-size: cover;
-    background-position: center center;
-}
-
-#gift-img-happy:hover {
-    background-image: url("images/yay.gif");
-}
-
-#gift-img-happy:active {
-    background-image: url("images/yay.gif");
-}
-
-#gift-img-best:hover {
-    background-image: url("images/thebest.gif");
-}
-
-#gift-img-chaos:hover {
-    background-image: url("images/chaos.gif");
-}
-
-#gift-img-backup:hover {
-    background-image: url("images/backup.gif");
-}
-
-#gift-img-love:hover {
-    background-image: url("images/loveyou.gif");
-}
-
-#gift-img-unicorn:hover {
-    background-image: url("images/unicorn.gif");
-}
-
-#gift-img-cheers:hover {
-    background-image: url("images/cheers.gif");
-}
-
-#footer {
-
-    width: 800px;
-    margin: 80px auto;
-    line-height: 2;
-    font-size: 2rem;
-}
-
-a {
-    color: white;
-}
-#button {
-    background-color: white;
-    padding: 15px 30px;
-    border: none;
-    border-radius: 10px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    margin: 30px 0 40px 0;
-}
-
-.canvas {
-    pointer-events: none;
-}
-.hc {
-    font-size: 3rem;
-}
-
-.hj {
-    font-size: 1rem;
-}
-
-/* 
-Add the footer paragraph according to the design. 
-Configure the anchor tag to open the link in a new tab.
-Forgotten how to do it? Google it! 
-
-Link: 
-https://scrimba.com/learn/htmlandcss
-
-Text:
-Want to create your own Birthday GIFt site? Take this HTML & CSS course.
-*/
+        <div class="gift-section">
+            <h2 class="gift-title">When we're team, everything is possible!</h2>
+            <div class="gift-img" id="gift-img-unicorn"></div>
+        </div>
+        
+         <div class="gift-section">
+            <h2 class="gift-title">This one's for you, my friend 🥂</h2>
+            <div class="gift-img" id="gift-img-cheers"></div>
+        </div>
+        
+        <p id="footer"><span class="hc">Happy Birthday, Hollie!</span><br>You are the best! Love you the mostest.<br><span class="hj">HUGE JEANS.</span></a></p>
+    <script src="https://cdn.jsdelivr.net/npm/js-confetti@latest/dist/js-confetti.browser.js"></script>
+    <script src="script.js"></script>  
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.2/dist/confetti.browser.min.js"></script>  
+    </body>
+</html>
