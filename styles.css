@@ -136,15 +136,15 @@ h2 {
     background-position: center center;
 }
 
-#gift-img-happy:hover, #gift-img-happy:active {
+#gift-img-happy:hover {
     background-image: url("images/yay.gif");
 }
 
-#gift-img-best:hover, #gift-img-best:active  {
+#gift-img-best:hover {
     background-image: url("images/thebest.gif");
 }
 
-#gift-img-chaos:hover, #gift-img-chaos:active {
+#gift-img-chaos:hover {
     background-image: url("images/chaos.gif");
 }
 
